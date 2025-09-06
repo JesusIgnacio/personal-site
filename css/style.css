@@ -1,0 +1,101 @@
+:root {
+  --font-base: 'IBM Plex Mono', monospace;
+  --color-bg-light: #FAF4ED;
+  --color-fg-light: #57544F;
+  --color-link-light: #994F00;
+  --color-accent-light: #D14D41;
+
+  --color-bg-dark: #11100E;
+  --color-fg-dark: #DCD7CA;
+  --color-link-dark: #F4A259;
+  --color-accent-dark: #E66533;
+
+  --max-width: 650px;
+  --spacing: 2rem;
+  --spacing-sm: 1rem;
+  --border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-bg-dark);
+    color: var(--color-fg-dark);
+  }
+  a { color: var(--color-link-dark); }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--color-bg-light);
+    color: var(--color-fg-light);
+  }
+  a { color: var(--color-link-light); }
+}
+
+body {
+  font-family: var(--font-base);
+  margin: 0;
+  padding: var(--spacing);
+  line-height: 1.8;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: var(--spacing-sm);
+    font-size: 1rem;
+  }
+  
+  .site-header h1 a {
+    font-size: 1.5rem;
+  }
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+.site-header h1 a {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site-header, .site-footer {
+  margin-bottom: var(--spacing);
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.content a {
+  text-decoration: underline;
+  border-bottom: none;
+  transition: color 0.2s ease;
+}
+
+.content a:hover {
+  color: var(--color-link-dark);
+}
+
+footer small {
+  opacity: 0.6;
+}
+
+code {
+  font-family: var(--font-base);
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+.site-footer {
+  font-size: 0.875rem;
+  text-align: center;
+}

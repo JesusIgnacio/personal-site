@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if title %}{{ title }} - Jesús Castillo{% else %}Jesús Castillo - Software Engineer{% endif %}</title>
+  <meta name="description" content="{% if description %}{{ description }}{% else %}Personal website of Jesús Castillo, a software engineer focused on simplicity, clarity, and performance.{% endif %}" />
+  <meta name="author" content="Jesús Castillo" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{% if title %}{{ title }} - Jesús Castillo{% else %}Jesús Castillo - Software Engineer{% endif %}" />
+  <meta property="og:description" content="{% if description %}{{ description }}{% else %}Personal website of Jesús Castillo, a software engineer focused on simplicity, clarity, and performance.{% endif %}" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:title" content="{% if title %}{{ title }} - Jesús Castillo{% else %}Jesús Castillo - Software Engineer{% endif %}" />
+  <meta property="twitter:description" content="{% if description %}{{ description }}{% else %}Personal website of Jesús Castillo, a software engineer focused on simplicity, clarity, and performance.{% endif %}" />
+  
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <header class="site-header">
+      <h1><a href="/">Jesús Castillo</a></h1>
+    </header>
+    <article class="content">
+      {{ content | safe }}
+    </article>
+    <footer class="site-footer">
+      <p><small>Built with Eleventy · Styled with Flexoki</small></p>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "flexoki-personal-site",
+  "version": "1.0.0",
+  "description": "Personal website built with Eleventy and styled with Flexoki color palette",
+  "main": ".eleventy.js",
+  "scripts": {
+    "dev": "eleventy --serve --watch",
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "keywords": [
+    "eleventy",
+    "personal-site",
+    "flexoki",
+    "blog"
+  ],
+  "author": "Jesús Castillo",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "luxon": "^3.7.2"
+  }
+}
